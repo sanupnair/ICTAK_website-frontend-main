@@ -32,6 +32,8 @@ function Navbar() {
         <Link to="/courses" className="nav-item nav-link">Courses</Link>
                 
                 {/* Navbar dropdown */}
+               
+  
             <div className="nav-item dropdown">
             <Link className="nav-link dropdown-toggle" to='' id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Offerings</Link>

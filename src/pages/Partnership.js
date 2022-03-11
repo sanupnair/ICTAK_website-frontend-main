@@ -22,7 +22,7 @@ function Partnership() {
                     <p class="mb-4" style={{textAlign:'justify'}}>Fantabulous Opportunity to handhold Nation Building Process with ICT Academy of kerala. </p>
                     <h5 class="mb-4">Download Partnership Proposal</h5>
                     <div class="row gy-2 gx-4 mb-4">
-                    <Link class="btn btn-primary py-3 px-5 mt-2" href="">Click Here</Link>
+                    <Link class="btn btn-primary py-3 px-5 mt-2" to="">Click Here</Link>
                         
                     </div>
                     {/* fill the form link */}
@@ -30,7 +30,7 @@ function Partnership() {
                     
                     {/* enter the details */}
                     <div class="row gy-2 gx-4 mb-4">
-                    <Link class="btn btn-primary py-3 px-5 mt-2" href="">Enter the details</Link>
+                    <Link class="btn btn-primary py-3 px-5 mt-2" to="">Enter the details</Link>
                         
                     </div>
                 </div>
