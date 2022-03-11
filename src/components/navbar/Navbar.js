@@ -3,9 +3,11 @@ import logo from '..//..//assets/images/logo.png';
 import '..//..//css/style.css';
 import { Link } from "react-router-dom";
 
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
-function Navbar() {
+
+function Navibar() {
   return (
 
     // navbar starts here
@@ -32,9 +34,19 @@ function Navbar() {
         <Link to="/courses" className="nav-item nav-link">Courses</Link>
                 
                 {/* Navbar dropdown */}
-               
+    <Dropdown>
+    <Dropdown.Toggle variant="" id="dropdown-basic">
+    Offerings
+    </Dropdown.Toggle>
+
+    <Dropdown.Menu>
+    <Dropdown.Item ><Link to="/offerings/partnership"className="dropdown-item">Partnership</Link></Dropdown.Item>
+    <Dropdown.Item><Link to="/offerings/membership"className="dropdown-item">Membership</Link></Dropdown.Item>
+    
+    </Dropdown.Menu>
+    </Dropdown> 
   
-            <div className="nav-item dropdown">
+            {/* <div className="nav-item dropdown">
             <Link className="nav-link dropdown-toggle" to='' id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Offerings</Link>
                 <div className="dropdown-menu  m-0">
@@ -42,7 +54,7 @@ function Navbar() {
                 <Link to="/offerings/membership"className="dropdown-item">Membership</Link>
                                     
                 </div>
-            </div>
+            </div> */}
             <Link to="/events" className="nav-item nav-link">Events</Link>
          
            
@@ -61,4 +73,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navibar

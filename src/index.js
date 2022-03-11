@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Navbar from "./components/navbar/Navbar";
+import Navibar from "./components/navbar/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/footer/Footer";
 import Contact from "./pages/Contact";
@@ -24,7 +24,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 ReactDOM.render(
   
   <Router>
-  <Navbar/>
+  <Navibar/>
   <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
